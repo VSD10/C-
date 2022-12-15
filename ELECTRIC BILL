@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class csbs
+{
+private:
+int a;
+public:
+void input()
+{
+	cout<<"\t\t\tELECTRICITY BILL CALCULATOR\n";
+cout<<"\n\nenter a number:";
+cin>>a;
+if(a<=100)
+{
+a=a*1.5;
+cout<<"\n price for consumed units"<<a;
+}
+else if(a>100 && a<201)
+{
+a=(100*1.5)+(a-100)*2.5;
+cout<<"\n price for consumed units"<<a;
+}
+else if(a>200 && a<301)
+{
+a=(100*1.5)+(100*2.5)+(a-200)*4;
+cout<<"\n price for consumed units"<<a;
+}
+else if(a>300 && a<=400)
+{
+a=(100*1.5)+(100*2.5)+(100*4)+(a-300)*5;
+cout<<"\n price for consumed units"<<a;
+}
+}};
+main()
+{
+csbs vs;
+vs.input();
+}
